@@ -18,13 +18,15 @@ def list_N(l):
 
 def list_H(l_max):
     l_Hlen = len(l_max)
-    for num in l_max:
-        if num > l_Hlen:
-            l_Hlen = num
+    for Hnum in l_max:
+        if Hnum > l_Hlen:
+            l_Hlen = Hnum
+    return l_Hlen
 
 
 def list_L(l_min):
     l_Llen = len(l_min)
-    for num in l_Llen:
-        if num > len:
-            l_Llen = num
+    for Lnum in l_min:
+        if Lnum < l_Llen:
+            l_Llen = Lnum
+    return l_Llen
